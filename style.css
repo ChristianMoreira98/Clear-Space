@@ -1,0 +1,123 @@
+
+/*https://magnofreire.com.br/?gad_source=1&gclid=EAIaIQobChMIi6bP3qnuiAMVnxGtBh2DICXQEAMYASAAEgKdPvD_BwE - SITE DE REFERENCIA*/
+
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+list-style: none;
+text-decoration: none;
+font-family: "Old Standard TT", serif;}
+
+
+
+html{
+width: 100%;
+height: 100vh;
+}
+
+
+header{
+    padding: min(5vh, 10rem);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 10px 15px white ;
+  z-index: 999;
+}
+
+header ol{
+    display: flex;
+    gap: 30px;
+    font-size: 1.3rem;
+}
+
+header i{
+   font-size: 1.5rem;
+  
+}
+
+
+#section1{
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+padding: min(45vh, 30rem); 
+background: linear-gradient(180deg, #a5a5a55b 8.3%, rgba(14, 15, 17, 0.733) 100%), url(imagens/bathroom-3563272_1280.jpg);
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+
+#section1 h2{
+    font-size: 3rem;
+    color: #fff;
+   font-weight: bold;
+}
+
+
+
+#section2{
+    padding: min(40vh, 30rem);
+    width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+#section2 h3{
+font-size: 2em;
+color: gray;
+font-weight: bold;
+
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.card{
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 20px;
+    background-color: bisque;
+}
+
+
+
+
+
+
+
+
+
+
+
+#section3{
+padding: min(20vh, 15rem);
+width: 100%;
+background-color: black;
+}
