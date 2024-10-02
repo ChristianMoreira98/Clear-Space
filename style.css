@@ -1,116 +1,216 @@
-
 /*https://magnofreire.com.br/?gad_source=1&gclid=EAIaIQobChMIi6bP3qnuiAMVnxGtBh2DICXQEAMYASAAEgKdPvD_BwE - SITE DE REFERENCIA*/
 
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap'); /*Importando uma font do Google Fonts*/
- 
-
-
-*{ /* "*" utilizamos para definir elementos fixos no codigo inteiro  */
-    margin: 0; /**/
-    padding: 0; /**/
-list-style: none; /*Tirando o sub-linhado das listas*/
-text-decoration: none; /*Tirando a cor roxa das listas*/
-font-family: "Old Standard TT", serif;} /*Fonte que importamos do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap');
+/*Importando uma font do Google Fonts*/
 
 
 
-html{ /*Chmando o html e definindo elementos*/
-width: 100%; /**/
-height: 100vh; /**/
+* {
+    /* "*" utilizamos para definir elementos fixos no codigo inteiro  */
+    margin: 0;
+    /**/
+    padding: 0;
+    /**/
+    list-style: none;
+    /*Tirando o sub-linhado das listas*/
+    text-decoration: none;
+    /*Tirando a cor roxa das listas*/
+    font-family: "Old Standard TT", serif;
+    box-sizing: border-box;
+}
+
+/*Fonte que importamos do Google Fonts*/
+
+
+
+html {
+    /*Chmando o html e definindo elementos*/
+    width: 100%;
+    /**/
+    height: 100vh;
+    /**/
 }
 
 
-header{ /*Estilização do cabeçalho*/
-    padding: min(5vh, 10rem); /*Tamanho do cabeçalho*/
-    width: 100%; /**/
-    display: flex; /*Tornando flex, e alinhando itens na vertical*/
-    justify-content: space-evenly; /*Justificando itens da maneira que quiser*/
-    align-items: center; /*Alinhando itens ao centro*/
-    text-align: center; /*Alinhando texto ao centro*/
-  background: #fff; /*Cor do cabeçalho*/
-  position: sticky; /**/
-  top: 0; /**/
-  left: 0; /**/
-  box-shadow: 0px 10px 15px white ; /*Linha que fica na parte de baixo do header*/
-  z-index: 999; /*Dando prioridade ao header (não deixando os elementos atravessarem ele ao rolar a tela)*/
+header {
+    /*Estilização do cabeçalho*/
+    padding: min(5vh, 10rem);
+    /*Tamanho do cabeçalho*/
+    width: 100%;
+    /**/
+    display: flex;
+    /*Tornando flex, e alinhando itens na vertical*/
+    justify-content: space-evenly;
+    /*Justificando itens da maneira que quiser*/
+    align-items: center;
+    /*Alinhando itens ao centro*/
+    text-align: center;
+    /*Alinhando texto ao centro*/
+    background: #fff;
+    /*Cor do cabeçalho*/
+    position: sticky;
+    /**/
+    top: 0;
+    /**/
+    left: 0;
+    /**/
+    box-shadow: 0px 10px 15px white;
+    /*Linha que fica na parte de baixo do header*/
+    z-index: 999;
+    /*Dando prioridade ao header (não deixando os elementos atravessarem ele ao rolar a tela)*/
 }
 
-header ol{ /*Chamando a ol para estilização*/
-    display: flex; /**Tornando flex, e alinhando itens na vertical*/
-    gap: 30px; /* Espaçamento entre os itens*/
-    font-size: 1.3rem; /*Tamanho da lista*/
-}
-
-header i{ /*Chamando os elementos do Font Awesome para a estilização*/
-   font-size: 1.5rem; /*Tamanho dos elementos*/
-  
-}
-
-
-#section1{ /*Estilizando a primeira sessão*/
-padding: min(45vh, 30rem); /*Tamnanho da sessão*/
-background-repeat: no-repeat; /*Para a imagem de fundo não se repetir*/
-background-position: center; /*Alinhando a imagem ao centro*/
-background-size: cover; /*Fazendo com que a imagem ocupe o espaço inteiro da sessão*/
-background: linear-gradient(180deg, #a5a5a55b 8.3%, rgba(14, 15, 17, 0.733) 100%), url(imagens/bathroom-3563272_1280.jpg); /*Adicionando a imagem e colocando um filtro de cor por cima*/
-display: flex; /*Tornando flex, e alinhando itens na vertical*/
-justify-content: center; /*Justificando itens da maneira que quiser*/
-align-items: center; /*Alinhando texto ao centro*/
-text-align: center; /*Alinhando texto ao centro*/
-}
-
-
-#section1 h2{ /*Chamando o subtítulo para estilização*/
-    font-size: 3rem; /*Tamanho do texto*/
-    color: #fff; /*Cor do texto*/
+header ol {
+    /*Chamando a ol para estilização*/
+    display: flex;
+    /**Tornando flex, e alinhando itens na vertical*/
+    gap: 30px;
+    /* Espaçamento entre os itens*/
+    font-size: 1.3rem;
+    /*Tamanho da lista*/
+    text-decoration: none;
 }
 
 
+header ol:hover {
+    cursor: pointer;
 
-#section2{ /*Estilizando a segunda sessão*/
-    padding: min(40vh, 30rem); /*Tamanho da sessão*/
-    width: 100%; /**/
-display: flex; /*Tornando flex, e alinhando itens na vertical*/
-justify-content: center; /*Justificando itens da maneira que quiser*/
-align-items: center;  /*Alinhando texto ao centro*/
-}
-
-#section2 h3{ /*Chamando o subtítulo para estilização*/ 
-font-size: 2em; /*Tamanho do texto*/
-color: gray; /*Cor do texto*/
-}
-
-.container{ /*Chamando a div pai para estilização*/
-    display: flex;  /*Tornando flex, e alinhando itens na vertical*/
-    justify-content: center; /*Justificando itens da maneira que quiser*/
-    align-items: center; /*Alinhando texto ao centro*/
-    text-align: center; /*Alinhando texto ao centro*/
-    z-index: 1; /**/
-    flex-wrap: wrap; /**/
-    position: relative; /**/
 }
 
 
-.card{ /*Chamando os cards para a estilização*/
-    width: 400px; /*Largura dos cards*/
-    height: 400px; /*Altura dos cards*/
-    margin: 30px; /**/
-    border-radius: 20px; /*Arredondamento dos cards*/
-    background-color: bisque; /*Cor de fundo dos cards*/
+header i {
+    /*Chamando os elementos do Font Awesome para a estilização*/
+    font-size: 1.5rem;
+    /*Tamanho dos elementos*/
+}
+
+
+#section1 {
+    /*Estilizando a primeira sessão*/
+    padding: min(45vh, 30rem);
+    /*Tamnanho da sessão*/
+    background-repeat: no-repeat;
+    /*Para a imagem de fundo não se repetir*/
+    background-position: center;
+    /*Alinhando a imagem ao centro*/
+    background-size: cover;
+    /*Fazendo com que a imagem ocupe o espaço inteiro da sessão*/
+    background: linear-gradient(180deg, #a5a5a55b 8.3%, rgba(14, 15, 17, 0.733) 100%), url(imagens/bathroom-3563272_1280.jpg);
+    /*Adicionando a imagem e colocando um filtro de cor por cima*/
+    display: flex;
+    /*Tornando flex, e alinhando itens na vertical*/
+    justify-content: center;
+    /*Justificando itens da maneira que quiser*/
+    align-items: center;
+    /*Alinhando texto ao centro*/
+    text-align: center;
+    /*Alinhando texto ao centro*/
+    width: 100%;
+}
+
+
+#section1 h2 {
+    /*Chamando o subtítulo para estilização*/
+    font-size: 3rem;
+    /*Tamanho do texto*/
+    color: #fff;
+    /*Cor do texto*/
+}
+
+
+#section2 {
+    /*Estilizando a segunda sessão*/
+    padding: min(40vh, 30rem);
+    /*Tamanho da sessão*/
+    width: 100%;
+    /**/
+}
+
+#section2 h3 {
+    /*Chamando o subtítulo para estilização*/
+    font-size: 2em;
+    /*Tamanho do texto*/
+    color: gray;
+    /*Cor do texto*/
+    width: 100%;
+}
+
+
+#section3 {
+    padding: min(20vh, 15rem);
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container {
+    /*Chamando a div pai para estilização*/
+    display: flex;
+    /*Tornando flex, e alinhando itens na vertical*/
+    justify-content: center;
+    /*Justificando itens da maneira que quiser*/
+    align-items: center;
+    /*Alinhando texto ao centro*/
+    text-align: center;
+    /*Alinhando texto ao centro*/
+    z-index: 1;
+    /**/
+    flex-wrap: wrap;
+    /**/
+    position: relative;
+    /**/
+}
+
+
+.card {
+    /*Chamando os cards para a estilização*/
+    width: 300px;
+    /*Largura dos cards*/
+    height: 400px;
+    /*Altura dos cards*/
+    margin: 30px;
+    /**/
+    border-radius: 20px;
+    /*Arredondamento dos cards*/
+    background-color: rgba(255, 228, 196, 0.664);
+    /*Cor de fundo dos cards*/
 }
 
 
 
 
+.content {
+    padding: 20px;
+    text-align: center;
+    transform: translatey(50px);
+    transition: 0.5s;
+    opacity: 0.2;
+}
 
+.content h4{
+    position: absolute;
+    right: 30px;
+    font-size: 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.content p{
+font-size: 0.8rem;
+color: black;
+font-weight: 300;
+margin-top: 4rem;8
+}
 
-
-
-
-
-#section3{
-padding: min(20vh, 15rem);
-width: 100%;
-background-color: black;
+.content:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translatey(0px);
 }
