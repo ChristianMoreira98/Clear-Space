@@ -16,7 +16,9 @@
     text-decoration: none;
     /*Tirando a cor roxa das listas*/
     font-family: "Old Standard TT", serif;
+   /**/
     box-sizing: border-box;
+       /**/
 }
 
 /*Fonte que importamos do Google Fonts*/
@@ -87,11 +89,11 @@ header i {
 
 #section1 {
     /*Estilizando a primeira sessão*/
-    padding: min(45vh, 30rem);
+    padding: min(40vh, 30rem);
     /*Tamnanho da sessão*/
     background-repeat: no-repeat;
     /*Para a imagem de fundo não se repetir*/
-    background-position: center;
+    background-position: top;
     /*Alinhando a imagem ao centro*/
     background-size: cover;
     /*Fazendo com que a imagem ocupe o espaço inteiro da sessão*/
@@ -123,12 +125,13 @@ header i {
     padding: min(40vh, 30rem);
     /*Tamanho da sessão*/
     width: 100%;
-    /**/
+    background-color: #fff;
 }
+
 
 #section2 h3 {
     /*Chamando o subtítulo para estilização*/
-    font-size: 2em;
+    font-size: 3em;
     /*Tamanho do texto*/
     color: gray;
     /*Cor do texto*/
@@ -143,6 +146,85 @@ header i {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.h32{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pai{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+    gap: 20px;
+}
+
+
+
+
+
+.pai div{
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+
+.filho1{
+background-image: url(imagens/apartment-416039_1280.jpg);
+background-position: center;
+background-size: cover;
+
+}
+
+.filho2{
+    background-image: url(imagens/living-room-2732939_1280.jpg);
+    background-position: center;
+    background-size: cover;
+;
+}
+
+.filho3{
+    background-image: url(imagens/brick-wall-1834784_1280.jpg);
+    background-position: right;
+    background-size: cover;
+;
+}
+
+.filho4{
+    background-image: url(imagens/chair-1840526_1280.jpg);
+    background-position: center;
+    background-size: cover;
+;
+}
+
+.filho5{
+    background-image: url(imagens/interior-2685521_1280.jpg);
+    background-position: center;
+    background-size: cover;
+;
+    
+}
+
+.filho6{
+    background-image: url(imagens/library-5219747_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    ;
 }
 
 
@@ -181,36 +263,80 @@ header i {
 }
 
 
-
-
 .content {
     padding: 20px;
     text-align: center;
-    transform: translatey(50px);
+    transform: translateY(50px);
     transition: 0.5s;
     opacity: 0.2;
 }
 
-.content h4{
-    position: absolute;
+.content h4 {
     right: 30px;
     font-size: 3rem;
+    color: #000000;
+    text-align: center;
+}
+
+.content p {
+    font-size: 1rem;
     color: #fff;
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+
+.email{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    color: white;
 }
 
-.content p{
-font-size: 0.8rem;
-color: black;
-font-weight: 300;
-margin-top: 4rem;8
+
+.numero{ color: rgb(2, 212, 2);
+    display: flex;
+    
 }
 
-.content:hover{
+.content:hover {
     opacity: 1;
     cursor: pointer;
     transition: 0.5s;
     transform: translatey(0px);
+}
+
+#i{
+    font-size: 2rem;
+    gap: 30px;
+    margin-top: 60px;
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    padding: min(5vh, 2rem);
+    background-color: rgb(39, 39, 39);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+footer p {
+    color: #fff;
+}
+
+
+
+@media (max-width:830px){
+
+
+    header{
+z-index: 999;
+padding: 2rem;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+    }
+
 }
