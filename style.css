@@ -1,6 +1,6 @@
 /*https://magnofreire.com.br/?gad_source=1&gclid=EAIaIQobChMIi6bP3qnuiAMVnxGtBh2DICXQEAMYASAAEgKdPvD_BwE - SITE DE REFERENCIA*/
 
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*Importando uma font do Google Fonts*/
 
 
@@ -15,10 +15,10 @@
     /*Tirando o sub-linhado das listas*/
     text-decoration: none;
     /*Tirando a cor roxa das listas*/
-    font-family: "Old Standard TT", serif;
-   /**/
+    font-family: "Barlow Condensed", sans-serif;
+    /**/
     box-sizing: border-box;
-       /**/
+    /**/
 }
 
 /*Fonte que importamos do Google Fonts*/
@@ -86,6 +86,19 @@ header i {
     /*Tamanho dos elementos*/
 }
 
+.whatsapp{
+    position: relative; /*Permite que elementos posicionados dentro da classe sejam posicionados em relação a ela*/
+}
+
+
+.whatsapp img{
+position: fixed; /*Mantém a imagem em uma posição fixa na tela, mesmo ao rolar a página */
+bottom: 20px; /*Define a distância da imagem em relação á parte inferior da tela*/
+right: 20px; /*Define a distância da imagem em relação á direita da tela*/
+width: 3.7rem; /*Define largura da imagem como 5 unidades rem (relativas ao tamanho da fonte)*/
+height: auto; /*Ajusta a altura da imagem automaticamente para manter a proporção*/
+}
+
 
 #section1 {
     /*Estilizando a primeira sessão*/
@@ -149,7 +162,7 @@ header i {
 }
 
 
-.h3{
+.h3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,14 +171,14 @@ header i {
 }
 
 
-.h32{
+.h32 {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.pai{
+.pai {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 35px;
@@ -176,7 +189,7 @@ header i {
 
 
 
-.pai div{
+.pai div {
     width: 250px;
     height: 300px;
     border-radius: 20px;
@@ -184,43 +197,43 @@ header i {
 
 
 
-.filho1{
-background-image: url(imagens/apartment-416039_1280.jpg);
-background-position: center;
-background-size: cover;
+.filho1 {
+    background-image: url(imagens/apartment-416039_1280.jpg);
+    background-position: center;
+    background-size: cover;
 
 }
 
-.filho2{
+.filho2 {
     background-image: url(imagens/living-room-2732939_1280.jpg);
     background-position: center;
     background-size: cover;
-;
+    ;
 }
 
-.filho3{
+.filho3 {
     background-image: url(imagens/brick-wall-1834784_1280.jpg);
     background-position: right;
     background-size: cover;
-;
+    ;
 }
 
-.filho4{
+.filho4 {
     background-image: url(imagens/chair-1840526_1280.jpg);
     background-position: center;
     background-size: cover;
-;
+    ;
 }
 
-.filho5{
+.filho5 {
     background-image: url(imagens/interior-2685521_1280.jpg);
     background-position: center;
     background-size: cover;
-;
-    
+    ;
+
 }
 
-.filho6{
+.filho6 {
     background-image: url(imagens/library-5219747_1280.jpg);
     background-position: center;
     background-size: cover;
@@ -266,7 +279,7 @@ background-size: cover;
 .content {
     padding: 20px;
     text-align: center;
-    transform: translateY(50px);
+    transform: translateY(35px);
     transition: 0.5s;
     opacity: 0.2;
 }
@@ -286,16 +299,8 @@ background-size: cover;
     font-size: 1.1rem;
 }
 
-
-.email{
-    display: flex;
-    color: white;
-}
-
-
-.numero{ color: rgb(2, 212, 2);
-    display: flex;
-    
+.space{
+font-size: 4rem;
 }
 
 .content:hover {
@@ -305,11 +310,48 @@ background-size: cover;
     transform: translatey(0px);
 }
 
-#i{
-    font-size: 2rem;
+#i {
+    font-size: 3rem;
     gap: 30px;
     margin-top: 60px;
     color: #fff;
+}
+
+
+
+.content ul{
+    margin-top: 60px;
+  text-align: center;
+}
+
+.content ul li{
+    color: #fff;
+}
+
+.email{
+display: flex;
+justify-content: center;
+text-align: center;
+font-size: 0.7rem;
+margin-bottom: 5px;
+}
+
+.numero{
+color: #fff;
+font-size: 0.8rem;
+}
+
+
+button{
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    margin-top: 35px;
+    
+}
+
+.clear {
+    font-size: 1.9rem;
 }
 
 footer {
@@ -328,15 +370,15 @@ footer p {
 
 
 
-@media (max-width:830px){
+@media (max-width:830px) {
 
 
-    header{
-z-index: 999;
-padding: 2rem;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
+    header {
+        z-index: 999;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
 }
