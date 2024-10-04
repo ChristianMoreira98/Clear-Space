@@ -1,434 +1,589 @@
-/*https://magnofreire.com.br/?gad_source=1&gclid=EAIaIQobChMIi6bP3qnuiAMVnxGtBh2DICXQEAMYASAAEgKdPvD_BwE - SITE DE REFERENCIA*/
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/*Importando uma font do Google Fonts*/
-
-
-
-* {
-    /* "*" utilizamos para definir elementos fixos no codigo inteiro  */
-    margin: 0;
-    /*Zerando a margem*/
-    padding: 0;
-    /*Zerando o respiro*/
-    list-style: none;
-    /*Tirando o sub-linhado das listas*/
-    text-decoration: none;
-    /*Tirando a cor roxa das listas*/
-    font-family: "Barlow Condensed", sans-serif;
-    /*Chamando a fonte*/
-    box-sizing: border-box;
-    /*Fazendo com que a página não quebre*/
-}
-
-/*Fonte que importamos do Google Fonts*/
-
-
-
-html {
-    /*Chmando o html e definindo elementos*/
-    width: 100%;
-    /**/
-    height: 100vh;
-    /**/
-}
-
-
-header {
-    /*Estilização do cabeçalho*/
-    padding: min(5vh, 10rem);
-    /*Tamanho do cabeçalho*/
-    width: 100%;
-    /**/
-    display: flex;
-    /*Tornando flex, e alinhando itens na vertical*/
-    justify-content: space-evenly;
-    /*Justificando itens da maneira que quiser*/
-    align-items: center;
-    /*Alinhando itens ao centro*/
-    text-align: center;
-    /*Alinhando texto ao centro*/
-    background: #fff;
-    /*Cor do cabeçalho*/
-    position: sticky;
-    /**/
-    top: 0;
-    /**/
-    left: 0;
-    /**/
-    box-shadow: 0px 10px 15px white;
-    /*Linha que fica na parte de baixo do header*/
-    z-index: 999;
-    /*Dando prioridade ao header (não deixando os elementos atravessarem ele ao rolar a tela)*/
-}
-
-header ol { 
-    /*Chamando a ol para estilização*/
-    display: flex;
-    /**Tornando flex, e alinhando itens na vertical*/
-    gap: 30px;
-    /* Espaçamento entre os itens*/
-    font-size: 1.3rem;
-    /*Tamanho da lista*/
-    text-decoration: none;
-    /*Tirando o sublinhado das listas*/
-}
-
-
-header ol:hover { /*hover para mudar algo quando passarmos o mouse*/
-    cursor: pointer; /*Mudança do cursor*/
-
-}
-
-
-header i {
-    /*Chamando os elementos do Font Awesome para a estilização*/
-    font-size: 1.5rem;
-    /*Tamanho dos elementos*/
-}
-
-.whatsapp{ /*Caixa (div pai) do whatsapp*/
-    position: relative; /*Permite que elementos posicionados dentro da classe sejam posicionados em relação a ela*/
-}
-
-
-.whatsapp img{ /*Chamando o ícone do whatsapp para a estilização*/
-position: fixed; /*Mantém a imagem em uma posição fixa na tela, mesmo ao rolar a página */
-bottom: 20px; /*Define a distância da imagem em relação á parte inferior da tela*/
-right: 20px; /*Define a distância da imagem em relação á direita da tela*/
-width: 3.7rem; /*Define largura da imagem como 5 unidades rem (relativas ao tamanho da fonte)*/
-height: auto; /*Ajusta a altura da imagem automaticamente para manter a proporção*/
-}
-
-
-#section1 {
-    /*Estilizando a primeira sessão*/
-    padding: min(50vh, 30rem);
-    /*Tamnanho da sessão*/
-    background: linear-gradient(180deg, #a5a5a55b 8.3%, rgba(14, 15, 17, 0.733) 100%), url(imagens/bathroom-3563272_1280.jpg);
-    /*Adicionando a imagem e colocando um filtro de cor por cima*/
-    background-position: center;
-  /*Alinhando a imagem ao centro*/
-    background-repeat: no-repeat;
- /*Para a imagem de fundo não se repetir*/
-    background-size: cover;
- /*Fazendo com que a imagem ocupe o espaço inteiro da sessão*/
-    display: flex;
-    /*Tornando flex, e alinhando itens na vertical*/
-    justify-content: center;
-    /*Justificando itens da maneira que quiser*/
-    align-items: center;
-    /*Alinhando texto ao centro*/
-    text-align: center;
-    /*Alinhando texto ao centro*/
-    width: 100%; /**/
-}
-
-
-#section1 h2 {
-    /*Chamando o subtítulo para estilização*/
-    font-size: 3rem;
-    /*Tamanho do texto*/
-    color: #fff;
-    /*Cor do texto*/
-}
-
-
-#section2 {
-    /*Estilizando a segunda sessão*/
-    padding: min(40vh, 30rem);
-    /*Tamanho da sessão*/
-    width: 100%;
-    background-color: #fff; /*Cor de fundo da sessão*/
-}
-
-
-#section2 h3 {
-    /*Chamando o subtítulo para estilização*/
-    font-size: 3em;
-    /*Tamanho do texto*/
-    color: gray;
-    /*Cor do texto*/
-    width: 100%;
-}
-
-
-#section3 { /*Chamando a terceira sessão para estilizar*/
-    padding: min(20vh, 15rem);
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.h3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-
-.h32 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.pai {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 35px;
-    gap: 20px;
-}
-
-
-
-
-
-.pai div {
-    width: 250px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-
-
-.filho1 {
-    background-image: url(imagens/apartment-416039_1280.jpg);
-    background-position: center;
-    background-size: cover;
-
-}
-
-.filho2 {
-    background-image: url(imagens/living-room-2732939_1280.jpg);
-    background-position: center;
-    background-size: cover;
-    ;
-}
-
-.filho3 {
-    background-image: url(imagens/brick-wall-1834784_1280.jpg);
-    background-position: right;
-    background-size: cover;
-    ;
-}
-
-.filho4 {
-    background-image: url(imagens/chair-1840526_1280.jpg);
-    background-position: center;
-    background-size: cover;
-    ;
-}
-
-.filho5 {
-    background-image: url(imagens/interior-2685521_1280.jpg);
-    background-position: center;
-    background-size: cover;
-    ;
-
-}
-
-.filho6 {
-    background-image: url(imagens/library-5219747_1280.jpg);
-    background-position: center;
-    background-size: cover;
-    ;
-}
-
-
-
-.container {
-    /*Chamando a div pai para estilização*/
-    display: flex;
-    /*Tornando flex, e alinhando itens na vertical*/
-    justify-content: center;
-    /*Justificando itens da maneira que quiser*/
-    align-items: center;
-    /*Alinhando texto ao centro*/
-    text-align: center;
-    /*Alinhando texto ao centro*/
-    z-index: 1;
-    /**/
-    flex-wrap: wrap;
-    /**/
-    position: relative;
-    /**/
-}
-
-
-.card {
-    /*Chamando os cards para a estilização*/
-    width: 300px;
-    /*Largura dos cards*/
-    height: 400px;
-    /*Altura dos cards*/
-    margin: 30px;
-    /**/
-    border-radius: 20px;
-    /*Arredondamento dos cards*/
-    background-color: rgba(255, 228, 196, 0.664);
-    /*Cor de fundo dos cards*/
-}
-
-
-.content {
-    padding: 20px;
-    text-align: center;
-    transform: translateY(35px);
-    transition: 0.5s;
-    opacity: 0.2;
-}
-
-.content h4 {
-    right: 30px;
-    font-size: 3rem;
-    color: #000000;
-    text-align: center;
-}
-
-.content p {
-    font-size: 1rem;
-    color: #fff;
-    font-weight: 300;
-    margin-top: 1rem;
-    font-size: 1.1rem;
-}
-
-.card1 p{
-font-size: 1.3rem;
-}
-
-.content:hover {
-    opacity: 1;
-    cursor: pointer;
-    transition: 0.5s;
-    transform: translatey(0px);
-}
-
-#i {
-    font-size: 3rem;
-    gap: 30px;
-    margin-top: 60px;
-    color: #fff;
-}
-
-
-
-.content ul{
-    margin-top: 60px;
-  text-align: center;
-}
-
-.content ul li{
-    color: #fff;
-    margin: 7px;
-}
-
-.email{
-display: flex;
-justify-content: center;
-text-align: center;
-font-size: 0.7rem;
-}
-
-.numero{
-color: #fff;
-font-size: 1rem;
-}
-
-
-button{
-    width: 120px;
-    height: 45px;
-    border-radius: 20px;
-    margin-top: 35px;
-    
-}
-
-
-button:hover{
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.clear {
-    font-size: 1.9rem;
-}
-
-footer {
-    width: 100%;
-    padding: min(5vh, 2rem);
-    background-color: rgb(39, 39, 39);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-footer p {
-    color: #fff;
-}
-
-
-@media (max-width:830px) {
-
-    header {
-        z-index: 999;
-        padding: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        right: 30px;
-    }
-
-header ol{
-margin-right: 15px;
-}
-
-
-
-    header li{
-        font-size: 1rem;
-    }
-
-
-    header h1{
-        font-size: 1rem;
-        margin-right: 35px;
-    }
-
-header 
-
-.whatsapp img{
-    width: 3.5rem;
-}
-
-#section1{
-    padding: 5rem;
-}
-
-
-#section2{
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.pai{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-}
-
+                /*https://magnofreire.com.br/?gad_source=1&gclid=EAIaIQobChMIi6bP3qnuiAMVnxGtBh2DICXQEAMYASAAEgKdPvD_BwE - SITE DE REFERENCIA*/
+
+                @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+                /*Importando uma font do Google Fonts*/
+
+
+
+                * {
+                    /* "*" utilizamos para definir elementos fixos no codigo inteiro  */
+                    margin: 0;
+                    /*Zerando a margem*/
+                    padding: 0;
+                    /*Zerando o respiro*/
+                    list-style: none;
+                    /*Tirando o sub-linhado das listas*/
+                    text-decoration: none;
+                    /*Tirando a cor roxa das listas*/
+                    font-family: "Barlow Condensed", sans-serif;
+                    /*Chamando a fonte*/
+                    box-sizing: border-box;
+                    /*Fazendo com que a página não quebre*/
+                }
+
+                /*Fonte que importamos do Google Fonts*/
+
+
+
+              
+                    html {
+                        /* Chamando o html e definindo elementos */
+                        
+                        width: 100%;  /* Define a largura do elemento html como 100% da largura da viewport (janela do navegador) */
+                        
+                        height: 100vh; /* Define a altura do elemento html como 100% da altura da viewport (1vh é 1% da altura da janela) */
+                    }
+
+
+                header {
+                    /*Estilização do cabeçalho*/
+                    padding: min(5vh, 10rem);
+                    /*Tamanho do cabeçalho*/
+                    width: 100%;
+                    /**/
+                    display: flex;
+                    /*Tornando flex, e alinhando itens na vertical*/
+                    justify-content: space-evenly;
+                    /*Justificando itens da maneira que quiser*/
+                    align-items: center;
+                    /*Alinhando itens ao centro*/
+                    text-align: center;
+                    /*Alinhando texto ao centro*/
+                    background: #fff;
+                    /*Cor do cabeçalho*/
+                    position: sticky;
+                    /**/
+                    top: 0;
+                    /*Zerando o topo - fazendo o header ficar fixo no topo*/
+                    left: 0;
+                    /*Zerando a esquerda - fazendo o header ficar fixo na esquerda (Já que os elementos são trazidos da esquerda*/
+                    box-shadow: 0px 10px 15px white;
+                    /*Linha que fica na parte de baixo do header*/
+                    z-index: 999;
+                    /*Dando prioridade ao header (não deixando os elementos atravessarem ele ao rolar a tela)*/
+                }
+
+                header ol {
+                    /*Chamando a ol para estilização*/
+                    display: flex;
+                    /**Tornando flex, e alinhando itens na vertical*/
+                    gap: 30px;
+                    /* Espaçamento entre os itens*/
+                    font-size: 1.3rem;
+                    /*Tamanho da lista*/
+                    text-decoration: none;
+                    /*Tirando o sublinhado das listas*/
+                }
+
+
+                header ol:hover {
+                    /*hover para mudar algo quando passarmos o mouse*/
+                    cursor: pointer;
+                    /*Mudança do cursor*/
+
+                }
+
+
+                header i {
+                    /*Chamando os elementos do Font Awesome para a estilização*/
+                    font-size: 1.5rem;
+                    /*Tamanho dos elementos*/
+                }
+
+                .whatsapp {
+                    /*Caixa (div pai) do whatsapp*/
+                    position: relative;
+                    /*Permite que elementos posicionados dentro da classe sejam posicionados em relação a ela*/
+                }
+
+
+                .whatsapp img {
+                    /*Chamando o ícone do whatsapp para a estilização*/
+                    position: fixed;
+                    /*Mantém a imagem em uma posição fixa na tela, mesmo ao rolar a página */
+                    bottom: 20px;
+                    /*Define a distância da imagem em relação á parte inferior da tela*/
+                    right: 20px;
+                    /*Define a distância da imagem em relação á direita da tela*/
+                    width: 3.7rem;
+                    /*Define largura da imagem como 5 unidades rem (relativas ao tamanho da fonte)*/
+                    height: auto;
+                    /*Ajusta a altura da imagem automaticamente para manter a proporção*/
+                }
+
+
+                #section1 {
+                    /*Estilizando a primeira sessão*/
+                    padding: min(50vh, 30rem);
+                    /*Tamnanho da sessão*/
+                    background: linear-gradient(180deg, #a5a5a55b 8.3%, rgba(14, 15, 17, 0.733) 100%), url(imagens/bathroom-3563272_1280.jpg);
+                    /*Adicionando a imagem e colocando um filtro de cor por cima*/
+                    background-position: center;
+                    /*Alinhando a imagem ao centro*/
+                    background-repeat: no-repeat;
+                    /*Para a imagem de fundo não se repetir*/
+                    background-size: cover;
+                    /*Fazendo com que a imagem ocupe o espaço inteiro da sessão*/
+                    display: flex;
+                    /*Tornando flex, e alinhando itens na vertical*/
+                    justify-content: center;
+                    /*Justificando itens da maneira que quiser*/
+                    align-items: center;
+                    /*Alinhando texto ao centro*/
+                    text-align: center;
+                    /*Alinhando texto ao centro*/
+                    width: 100%;
+                    /*Informando que quero utilizar 100% da sessão*/
+                }
+
+
+                #section1 h2 {
+                    /*Chamando o subtítulo para estilização*/
+                    font-size: 3rem;
+                    /*Tamanho do texto*/
+                    color: #fff;
+                    /*Cor do texto*/
+                }
+
+
+                #section2 {
+                    /*Estilizando a segunda sessão*/
+                    padding: min(40vh, 30rem);
+                    /*Tamanho da sessão*/
+                    width: 100%;
+                    background-color: #fff;
+                    /*Cor de fundo da sessão*/
+                }
+
+
+                #section2 h3 {
+                    /*Chamando o subtítulo para estilização*/
+                    font-size: 3em;
+                    /*Tamanho do texto*/
+                    color: gray;
+                    /*Cor do texto*/
+                    width: 100%;
+                }
+
+
+                #section3 {
+                    /*Chamando a terceira sessão para estilizar*/
+                    padding: min(20vh, 15rem);
+                    /*Tamanho da sessão*/
+                    width: 100%;
+                    /*Informando que eu quero ocupar 100% da sessão*/
+                    background-color: black;
+                    /*Cor de fundo da sessão*/
+                    display: flex;
+                    /*Tornando flex - deixando itens na vertical*/
+                    justify-content: center;
+                    /*Justificando o conteúdo*/
+                    align-items: center;
+                    /*Alinhando itens ao centro*/
+                }
+
+
+                .h3 {
+                    /*Chamando a div pai do h3 pra estilizar*/
+                    display: flex;
+                    /*Tornando flex - deixando itens na vertical*/
+                    align-items: center;
+                    /*Alinhando itens ao centro*/
+                    justify-content: center;
+                    /*Justificando o conteúdo*/
+                    text-align: center;
+                    /*Alinhando o texto no centro*/
+                    margin-bottom: 20px;
+                    /*Dando um espaçamento na parte de baixo*/
+                }
+
+
+                .h32 {
+                    /*Chamando a div pai do h3 pra estilizar*/
+                    display: flex;
+                    /*Tornando flex - deixando itens na vertical*/
+                    align-items: center;
+                    /*Alinhando itens ao centro*/
+                    justify-content: center;
+                    /*Justificando o conteúdo*/
+                    text-align: center;
+                    /*Alinhando o texto no centro*/
+                }
+
+                .pai {
+                    /*Div pai das caixas da sessão 2*/
+                    display: flex;
+                    /*Tornando flex - deixando itens na vertical*/
+                    justify-content: space-evenly;
+                    /*Justificando o conteúdo*/
+                    margin-bottom: 35px;
+                    /*Dando um espaçamento na parte de baixo*/
+                    gap: 20px;
+                    /*Separando os itens*/
+                }
+
+
+
+
+
+                .pai div {
+                    /*Div's das caixas da sessão 2*/
+                    width: 250px;
+                    /*Altura das caixas*/
+                    height: 300px;
+                    /*Largura das caixas*/
+                    border-radius: 20px;
+                    /*Arredondamento das caixas*/
+                }
+
+
+
+                .filho1 {
+                    /*Div filho*/
+                    background-image: url(imagens/apartment-416039_1280.jpg);
+                    /*Imagem da caixa*/
+                    background-position: center;
+                    /*Posicionando a imagem no centro*/
+                    background-size: cover;
+                    /*Fazendo a imagem ocupar o espaço inteiro da caixa*/
+
+                }
+
+                .filho2 {
+                    /*Div filho*/
+                    background-image: url(imagens/living-room-2732939_1280.jpg);
+                    /*Imagem da caixa*/
+                    background-position: center;
+                    /*Posicionando a imagem no centro*/
+                    background-size: cover;
+                    /*Fazendo a imagem ocupar o espaço inteiro da caixa*/
+                    ;
+                }
+
+                .filho3 {
+                    /*Div filho*/
+                    background-image: url(imagens/brick-wall-1834784_1280.jpg);
+                    /*Imagem da caixa*/
+                    background-position: right;
+                    /*Posicionando a imagem na direita*/
+                    background-size: cover;
+                    /*Fazendo a imagem ocupar o espaço inteiro da caixa*/
+                    ;
+                }
+
+                .filho4 {
+                    /*Div filho*/
+                    background-image: url(imagens/chair-1840526_1280.jpg);
+                    /*Imagem da caixa*/
+                    background-position: center;
+                    /*Posicionando a imagem no centro*/
+                    background-size: cover;
+                    /*Fazendo a imagem ocupar o espaço inteiro da caixa*/
+                    ;
+                }
+
+                .filho5 {
+                    /*Div filho*/
+                    background-image: url(imagens/interior-2685521_1280.jpg);
+                    /*Imagem da caixa*/
+                    background-position: center;
+                    /*Posicionando a imagem no centro*/
+                    background-size: cover;
+                    /*Fazendo a imagem ocupar o espaço inteiro da caixa*/
+                    ;
+
+                }
+
+                .filho6 {
+                    /*Div filho*/
+                    background-image: url(imagens/library-5219747_1280.jpg);
+                    /*Imagem da caixa*/
+                    background-position: center;
+                    /*Posicionando a imagem no centro*/
+                    background-size: cover;
+                    /*Fazendo a imagem ocupar o espaço inteiro da caixa*/
+                    ;
+                }
+
+
+
+                .container {
+                    /*Chamando a div pai dos cards para estilização*/
+                    display: flex;
+                    /*Tornando flex, e alinhando itens na vertical*/
+                    justify-content: center;
+                    /*Justificando itens da maneira que quiser*/
+                    align-items: center;
+                    /*Alinhando texto ao centro*/
+                    text-align: center;
+                    /*Alinhando texto ao centro*/
+                    z-index: 1;
+                    /*Piriorizando*/
+                    flex-wrap: wrap;
+                     /*Força as caixas a ficarem na mesma linha*/
+                    position: relative;
+                      /*Permite que elementos posicionados dentro da classe sejam posicionados em relação a ela*/
+                }
+
+
+                .card {
+                    /*Chamando os cards para a estilização*/
+                    width: 300px;
+                    /*Largura dos cards*/
+                    height: 400px;
+                    /*Altura dos cards*/
+                    margin: 30px;
+                    /*Adicionando um espaço em todos os lados*/
+                    border-radius: 20px;
+                    /*Arredondamento dos cards*/
+                    background-color: rgba(255, 228, 196, 0.664);
+                    /*Cor de fundo dos cards*/
+                }
+
+
+                .content {
+                    /*Div do conteúdo dos cards*/
+                    padding: 20px;
+                    /*Respiro dentro dos cards*/
+                    text-align: center;
+                    /*Centralizando o texto*/
+                    transform: translateY(35px);
+                    /* Subindo os itens no eixo Y*/
+                    transition: 0.5s;
+                    /* Tempo de transição*/
+                    opacity: 0.2;
+                    /*Diminuindo a opacidade (20% da opacidade)*/
+                }
+
+                .content h4 {
+                    /*Chamando o subtítulo para estilização*/
+                    right: 30px;
+                    /*Colocando uma espaço no lado direito*/
+                    font-size: 3rem;
+                    /*Tamanho do texto*/
+                    color: #000000;
+                    /*Cor do texto*/
+                    text-align: center;
+                    /*Alinhando texto ao centro*/
+                }
+
+                .content p {
+                    /*Chamando o parágrafo para estilizaçãõ*/
+                    font-size: 1rem;
+                    /*Tamanho do texto*/
+                    color: #fff;
+                    /*Cor do texto*/
+                    font-weight: 300;
+                    /*Peso da fonte*/
+                    margin-top: 1rem;
+                    /*Dando um espaço no topo*/
+                    font-size: 1.1rem;
+                    /*Tamanho do texto*/
+                }
+
+                .card1 p {
+                    /*Chamando o parágrafo do card 1 pra estilizar*/
+                    font-size: 1.3rem;
+                    /*Tamanho do texto*/
+                }
+
+                .content:hover {
+                 /*hover para mudar algo quando passarmos o mouse*/
+                    opacity: 1;
+                    /*Opacidade do conteúdo*/
+                    cursor: pointer;
+                    /*Mudança do cursor*/
+                    transition: 0.5s;
+                    /*Tempo de transição*/
+                    transform: translatey(0px);
+                    /*Voltando o eixo Y a 0*/
+                }
+
+                #i {
+                    /*Estilização dos itens do terceiro card*/
+                    font-size: 3rem;
+                    /*Tamanho dos ícones*/
+                    gap: 30px;
+                    /*Separação dos ícones*/
+                    margin-top: 60px;
+                    /*Dando um espaçamento no topo*/
+                    color: #fff;
+                     /*Cor do texto*/
+                }
+
+
+
+                .content ul {
+                    /*Chamando a ul (lista) para estilização*/
+                    margin-top: 60px;
+                    /*Dando um espaçamento no topo*/
+                    text-align: center;
+                     /*Alinhando texto ao centro*/
+                }
+
+                .content ul li { 
+                    /*Chamando o conteúdo da ul (li) para estilizar*/
+                    color: #fff;
+                      /*Cor do texto*/
+                    margin: 7px;
+                    /*Espaçamento em todos os lados*/
+                }
+
+                .email { 
+                    /*Chamando a div pai do ícone do email e texto para estilizar*/
+                    display: flex;
+                   /*Tornando flex, e alinhando itens na vertical*/
+                    justify-content: center;
+                   /*Justificando itens da maneira que quiser*/
+                    text-align: center;
+                      /*Alinhando texto ao centro*/
+                    font-size: 0.7rem;
+                    /*Tamanho do texto*/
+                }
+
+                .numero {
+                   /*Chamando a div pai do ícone do whatsapp e texto para estilizar*/
+                    color: #fff;
+                   /*Cor do texto*/
+                    font-size: 1rem;
+                  /*Tamanho do texto*/
+                }
+
+
+                button {
+                    /*Chamando o botão para estilizar*/
+                    width: 120px;
+                    /*Largura do botão*/
+                    height: 45px;
+                    /*Altura do botão*/
+                    border-radius: 20px;
+                    /*Arredondamento do botão*/
+                    margin-top: 35px;
+                    /*Dando um espaço na parte de baixo do botão*/
+
+                }
+
+
+                button:hover {
+                   /*hover para mudar algo quando passarmos o mouse*/
+                    transition: 0.5s;
+                    /*Tempo de transição*/
+                    cursor: pointer;
+                    /*Mudança do cursor*/
+                }
+
+                .clear {
+                    /*Div pai do parágrafo do primeiro card*/
+                    font-size: 1.9rem;
+                    /*Tamanho do texto*/
+                }
+
+                footer { 
+                    /*Chmando o rodapé para estilizar*/
+                    width: 100%;
+                    /*Informando que quero ocupar 100% do rodapé*/
+                    padding: min(5vh, 2rem);
+                      /*Tamanho do rodapé*/
+                    background-color: rgb(39, 39, 39);
+                    /*Cor de fundo do rodapé*/
+                    justify-content: center;
+                   /*Justificando itens da maneira que quiser*/
+                    align-items: center;
+                     /*Alinhando texto ao centro*/
+                    text-align: center;
+                     /*Alinhando texto ao centro*/
+                }
+
+
+                footer p {
+                    /*Chamando parágrafo do footer para estilizar*/
+                    color: #fff;
+                    /*Cor do texto*/
+                }
+
+
+                @media (max-width:830px) {
+                    /*Responsividade do site - Utilizando max-width (queremos que mude algo quando a tela diminuir em 830px - Utilizando 830px que é uma medida da maioria dos celulares e tablets*/
+
+                    header {
+                        /*Chamando o cabeçalho para responsividade*/
+                        z-index: 999;
+                        /*Cbaeçalho com prioridade*/
+                        padding: 2rem;
+                        /*Mudando tamanho do cabeçalho*/
+                        display: flex;
+                       /*Tornando flex, e alinhando itens na vertical*/
+                        align-items: center;
+                        /*Alinhando texto ao centro*/
+                        justify-content: space-evenly;
+                      /*Justificando itens da maneira que quiser*/
+                        right: 30px;
+                        /*Espaçamento na direita*/
+                    }
+
+                    header ol {
+                        /*Chamando a ol para responsividade*/
+                        margin-right: 15px;
+                        /*Dando um espaçamento na direita*/
+                    }
+
+
+
+                    header li {
+                        /*Chamando o conteúdo da lista (li) para responsividade*/
+                        font-size: 1rem;
+                        /*Tamanho que o conteúdo vai se adaptar*/
+                    }
+
+
+                    header h1 {
+                        /*Chamando o primeiro título para responsividade*/
+                        font-size: 1rem;
+                        /*Adaptação do tamanho do texto*/
+                        margin-right: 35px;
+                        /*Dando um espaçamento na direita*/
+                    }
+
+
+
+                    .whatsapp img {
+                        /*Chamando o ícone do whatsapp para responsividade*/
+                        width: 3.5rem;
+                        /*Adaptação do novo tamanho do ícone*/
+                    }
+
+                    #section1 {
+                        /*Chamando a primeira sessão para responsividade*/
+                        padding: 5rem;
+                        /*Novo tamanho para a sessão se adaptar*/
+                    }
+
+
+                    #section2 {
+                        /*Chamando a segunda sessão para responsividade*/
+                        padding: 4rem;
+                       /*Novo tamanho para a sessão se adaptar*/
+                        display: flex;
+                       /*Tornando flex, e alinhando itens na vertical*/
+                        flex-direction: column;
+                         /*Fazendo com que as caixas fiquem em colunas (em cima da outra) quando a tela diminuir*/
+                        flex-wrap: wrap;
+                        /*Força as caixas a ficarem na mesma linha*/
+                        justify-content: center;
+                      /*Justificando itens da maneira que quiser*/
+                        align-items: center;
+                         /*Alinhando texto ao centro*/
+                    }
+
+
+                    .pai {
+                        /*Chamando a div pai dos projetos para responsividade*/
+                        display: flex;
+                        /*Tornando flex, e alinhando itens na vertical*/
+                        flex-direction: column;
+                        /*Fazendo com que as caixas fiquem em colunas (em cima da outra) quando a tela diminuir*/
+                        flex-wrap: wrap;
+                        /*Força as caixas a ficarem na mesma linha*/
+                    }
+
+                }
