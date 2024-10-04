@@ -102,16 +102,16 @@ height: auto; /*Ajusta a altura da imagem automaticamente para manter a proporç
 
 #section1 {
     /*Estilizando a primeira sessão*/
-    padding: min(40vh, 30rem);
+    padding: min(50vh, 30rem);
     /*Tamnanho da sessão*/
-    background-repeat: no-repeat;
-    /*Para a imagem de fundo não se repetir*/
-    background-position: top;
-    /*Alinhando a imagem ao centro*/
-    background-size: cover;
-    /*Fazendo com que a imagem ocupe o espaço inteiro da sessão*/
     background: linear-gradient(180deg, #a5a5a55b 8.3%, rgba(14, 15, 17, 0.733) 100%), url(imagens/bathroom-3563272_1280.jpg);
     /*Adicionando a imagem e colocando um filtro de cor por cima*/
+    background-position: center;
+  /*Alinhando a imagem ao centro*/
+    background-repeat: no-repeat;
+ /*Para a imagem de fundo não se repetir*/
+    background-size: cover;
+ /*Fazendo com que a imagem ocupe o espaço inteiro da sessão*/
     display: flex;
     /*Tornando flex, e alinhando itens na vertical*/
     justify-content: center;
@@ -120,7 +120,7 @@ height: auto; /*Ajusta a altura da imagem automaticamente para manter a proporç
     /*Alinhando texto ao centro*/
     text-align: center;
     /*Alinhando texto ao centro*/
-    width: 100%;
+    width: 100%; /**/
 }
 
 
@@ -299,8 +299,8 @@ height: auto; /*Ajusta a altura da imagem automaticamente para manter a proporç
     font-size: 1.1rem;
 }
 
-.space{
-font-size: 4rem;
+.card1 p{
+font-size: 1.3rem;
 }
 
 .content:hover {
@@ -326,6 +326,7 @@ font-size: 4rem;
 
 .content ul li{
     color: #fff;
+    margin: 7px;
 }
 
 .email{
@@ -333,21 +334,26 @@ display: flex;
 justify-content: center;
 text-align: center;
 font-size: 0.7rem;
-margin-bottom: 5px;
 }
 
 .numero{
 color: #fff;
-font-size: 0.8rem;
+font-size: 1rem;
 }
 
 
 button{
-    width: 100px;
-    height: 35px;
+    width: 120px;
+    height: 45px;
     border-radius: 20px;
     margin-top: 35px;
     
+}
+
+
+button:hover{
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .clear {
@@ -369,9 +375,7 @@ footer p {
 }
 
 
-
 @media (max-width:830px) {
-
 
     header {
         z-index: 999;
@@ -379,6 +383,51 @@ footer p {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        right: 30px;
     }
 
+header ol{
+margin-right: 15px;
 }
+
+
+
+    header li{
+        font-size: 1rem;
+    }
+
+
+    header h1{
+        font-size: 1rem;
+        margin-right: 35px;
+    }
+
+header 
+
+.whatsapp img{
+    width: 3.5rem;
+}
+
+#section1{
+    padding: 5rem;
+}
+
+
+#section2{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pai{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+}
+
