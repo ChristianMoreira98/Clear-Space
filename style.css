@@ -8,17 +8,17 @@
 * {
     /* "*" utilizamos para definir elementos fixos no codigo inteiro  */
     margin: 0;
-    /**/
+    /*Zerando a margem*/
     padding: 0;
-    /**/
+    /*Zerando o respiro*/
     list-style: none;
     /*Tirando o sub-linhado das listas*/
     text-decoration: none;
     /*Tirando a cor roxa das listas*/
     font-family: "Barlow Condensed", sans-serif;
-    /**/
+    /*Chamando a fonte*/
     box-sizing: border-box;
-    /**/
+    /*Fazendo com que a página não quebre*/
 }
 
 /*Fonte que importamos do Google Fonts*/
@@ -62,7 +62,7 @@ header {
     /*Dando prioridade ao header (não deixando os elementos atravessarem ele ao rolar a tela)*/
 }
 
-header ol {
+header ol { 
     /*Chamando a ol para estilização*/
     display: flex;
     /**Tornando flex, e alinhando itens na vertical*/
@@ -71,11 +71,12 @@ header ol {
     font-size: 1.3rem;
     /*Tamanho da lista*/
     text-decoration: none;
+    /*Tirando o sublinhado das listas*/
 }
 
 
-header ol:hover {
-    cursor: pointer;
+header ol:hover { /*hover para mudar algo quando passarmos o mouse*/
+    cursor: pointer; /*Mudança do cursor*/
 
 }
 
@@ -86,12 +87,12 @@ header i {
     /*Tamanho dos elementos*/
 }
 
-.whatsapp{
+.whatsapp{ /*Caixa (div pai) do whatsapp*/
     position: relative; /*Permite que elementos posicionados dentro da classe sejam posicionados em relação a ela*/
 }
 
 
-.whatsapp img{
+.whatsapp img{ /*Chamando o ícone do whatsapp para a estilização*/
 position: fixed; /*Mantém a imagem em uma posição fixa na tela, mesmo ao rolar a página */
 bottom: 20px; /*Define a distância da imagem em relação á parte inferior da tela*/
 right: 20px; /*Define a distância da imagem em relação á direita da tela*/
@@ -138,7 +139,7 @@ height: auto; /*Ajusta a altura da imagem automaticamente para manter a proporç
     padding: min(40vh, 30rem);
     /*Tamanho da sessão*/
     width: 100%;
-    background-color: #fff;
+    background-color: #fff; /*Cor de fundo da sessão*/
 }
 
 
@@ -152,7 +153,7 @@ height: auto; /*Ajusta a altura da imagem automaticamente para manter a proporç
 }
 
 
-#section3 {
+#section3 { /*Chamando a terceira sessão para estilizar*/
     padding: min(20vh, 15rem);
     width: 100%;
     background-color: black;
