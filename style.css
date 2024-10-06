@@ -1,6 +1,6 @@
 /*https://magnofreire.com.br/?gad_source=1&gclid=EAIaIQobChMIi6bP3qnuiAMVnxGtBh2DICXQEAMYASAAEgKdPvD_BwE - SITE DE REFERENCIA*/
 
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 /*Importando uma font do Google Fonts*/
 
 
@@ -15,7 +15,7 @@
     /*Tirando o sub-linhado das listas*/
     text-decoration: none;
     /*Tirando a cor roxa das listas*/
-    font-family: "Old Standard TT", serif;
+    font-family: "Exo 2", sans-serif;
    /**/
     box-sizing: border-box;
        /**/
@@ -87,6 +87,11 @@ header i {
 }
 
 
+header img{
+    width: 35rem;
+}
+
+
 #section1 {
     /*Estilizando a primeira sessão*/
     padding: min(40vh, 30rem);
@@ -136,100 +141,101 @@ header i {
     color: gray;
     /*Cor do texto*/
     width: 100%;
+      /**/
 }
 
 
-#section3 {
-    padding: min(20vh, 15rem);
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#section3 {  /**/
+    padding: min(20vh, 15rem);   /**/
+    width: 100%;   /**/
+    background-color: black;   /**/
+    display: flex;   /**/
+    justify-content: center;   /**/
+    align-items: center;   /**/
 }
 
 
-.h3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 20px;
+.h3{   /**/
+    display: flex;   /**/
+    align-items: center;   /**/
+    justify-content: center;   /**/
+    text-align: center;   /**/
+    margin-bottom: 20px;   /**/
 }
 
 
-.h32{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.h32{   /**/
+    display: flex;   /**/
+    align-items: center;   /**/
+    justify-content: center;   /**/
+    text-align: center;   /**/
 }
 
-.pai{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 35px;
-    gap: 20px;
-}
-
-
-
-
-
-.pai div{
-    width: 250px;
-    height: 300px;
-    border-radius: 20px;
+.pai{   /**/
+    display: flex;   /**/
+    justify-content: space-evenly;   /**/
+    margin-bottom: 35px;   /**/
+    gap: 20px;   /**/
 }
 
 
 
-.filho1{
-background-image: url(imagens/apartment-416039_1280.jpg);
-background-position: center;
-background-size: cover;
+
+
+.pai div{   /**/
+    width: 250px;   /**/
+    height: 300px;   /**/
+    border-radius: 20px;   /**/
+}
+
+
+
+.filho1{   /**/
+background-image: url(imagens/apartment-416039_1280.jpg);   /**/
+background-position: center;   /**/
+background-size: cover;   /**/
 
 }
 
-.filho2{
-    background-image: url(imagens/living-room-2732939_1280.jpg);
-    background-position: center;
-    background-size: cover;
+.filho2{   /**/
+    background-image: url(imagens/living-room-2732939_1280.jpg);   /**/
+    background-position: center;   /**/
+    background-size: cover;   /**/
 ;
 }
 
-.filho3{
-    background-image: url(imagens/brick-wall-1834784_1280.jpg);
-    background-position: right;
-    background-size: cover;
+.filho3{   /**/
+    background-image: url(imagens/brick-wall-1834784_1280.jpg);   /**/
+    background-position: right;   /**/
+    background-size: cover;   /**/
 ;
 }
 
-.filho4{
-    background-image: url(imagens/chair-1840526_1280.jpg);
-    background-position: center;
-    background-size: cover;
+.filho4{   /**/
+    background-image: url(imagens/chair-1840526_1280.jpg);   /**/
+    background-position: center;   /**/
+    background-size: cover;   /**/
 ;
 }
 
-.filho5{
-    background-image: url(imagens/interior-2685521_1280.jpg);
-    background-position: center;
-    background-size: cover;
+.filho5{   /**/
+    background-image: url(imagens/interior-2685521_1280.jpg);   /**/
+    background-position: center;   /**/
+    background-size: cover;   /**/
 ;
     
 }
 
-.filho6{
-    background-image: url(imagens/library-5219747_1280.jpg);
-    background-position: center;
-    background-size: cover;
-    ;
+.filho6{   /**/
+    background-image: url(imagens/library-5219747_1280.jpg);   /**/
+    background-position: center;   /**/
+    background-size: cover;   /**/
+    ; 
 }
 
 
 
-.container {
+.container {   
     /*Chamando a div pai para estilização*/
     display: flex;
     /*Tornando flex, e alinhando itens na vertical*/
@@ -263,80 +269,101 @@ background-size: cover;
 }
 
 
-.content {
-    padding: 20px;
-    text-align: center;
-    transform: translateY(50px);
-    transition: 0.5s;
-    opacity: 0.2;
+.content {   /**/
+    padding: 20px;   /**/
+    text-align: center;   /**/
+    transform: translateY(25px);   /**/
+    transition: 0.5s;   /**/
+    opacity: 0.2;   /**/
 }
 
-.content h4 {
-    right: 30px;
-    font-size: 3rem;
-    color: #000000;
-    text-align: center;
+.content h4 {   /**/
+    right: 30px;   /**/
+    font-size: 3rem;   /**/
+    color: #000000;   /**/
+    text-align: center;   /**/
 }
 
-.content p {
-    font-size: 1rem;
-    color: #fff;
-    font-weight: 300;
-    margin-top: 1rem;
-    font-size: 1.1rem;
-}
-
-
-.email{
-    display: flex;
-    color: white;
+.content p {   /**/
+    font-size: 1rem;   /**/
+    color: #fff;   /**/
+    font-weight: 300;   /**/
+    margin-top: 1rem;   /**/
+    font-size: 1.1rem;   /**/
 }
 
 
-.numero{ color: rgb(2, 212, 2);
-    display: flex;
+h5{   /**/
+    font-size: 1.3rem;   /**/
+    color: #fff;   /**/
+}
+
+.content ul{   /**/
+   text-align: center;   /**/
+   font-size: 0.8rem;   /**/
+   margin: 10px;   /**/
+   margin-top: 80px;   /**/
+}
+.content  li{   /**/
+margin-bottom: 10px;   /**/
+}
+
+
+.content button{   /**/
+    margin-top: 50px;   /**/
+    width: 10rem;    /**/
+    height: 3.0rem;   /**/
+    border-radius: 20px;   /**/
+    padding: 15px;
     
 }
 
-.content:hover {
-    opacity: 1;
-    cursor: pointer;
-    transition: 0.5s;
-    transform: translatey(0px);
+.content button:hover{   /**/
+    transition: 0.5s;   /**/
+    cursor: pointer;   /**/
+
+ 
+}
+ 
+.content:hover {   /**/
+    opacity: 1;   /**/
+    cursor: pointer;   /**/
+    transition: 0.5s;   /**/
+    transform: translatey(0px);   /**/
 }
 
-#i{
-    font-size: 2rem;
-    gap: 30px;
-    margin-top: 60px;
-    color: #fff;
+#i{   /**/
+    font-size: 3rem;   /**/
+    gap: 30px;   /**/
+    margin-top: 60px;   /**/
+    color: #fff;   /**/
 }
 
-footer {
-    width: 100%;
-    padding: min(5vh, 2rem);
-    background-color: rgb(39, 39, 39);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-footer p {
-    color: #fff;
+footer {   /**/
+    width: 100%;   /**/
+    padding: min(5vh, 2rem);   /**/
+    background-color: rgb(39, 39, 39);   /**/
+    justify-content: center;   /**/
+    align-items: center;   /**/
+    text-align: center;   /**/
 }
 
 
+footer p {   /**/
+    color: #fff;   /**/
+}
 
-@media (max-width:830px){
 
 
-    header{
-z-index: 999;
-padding: 2rem;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
+@media (max-width:830px){   /**/
+
+
+    header{   /**/
+z-index: 999;   /**/
+padding: 2rem;   /**/
+display: flex;   /**/
+align-items: center;   /**/
+justify-content: space-evenly;   /**/
     }
 
 }
