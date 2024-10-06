@@ -69,7 +69,7 @@
                     /**Tornando flex, e alinhando itens na vertical*/
                     gap: 30px;
                     /* Espaçamento entre os itens*/
-                    font-size: 1.3rem;
+                    font-size: 1.4rem;
                     /*Tamanho da lista*/
                     text-decoration: none;
                     /*Tirando o sublinhado das listas*/
@@ -157,7 +157,7 @@
 
 
                 #section2 h3 {
-                    /*Chamando o subtítulo para estilização*/
+                    /*Chamando o subtítulo para     estilização*/
                     font-size: 3em;
                     /*Tamanho do texto*/
                     color: gray;
@@ -401,11 +401,11 @@
 
                 #i {
                     /*Estilização dos itens do terceiro card*/
-                    font-size: 3rem;
+                    font-size: 4rem;
                     /*Tamanho dos ícones*/
                     gap: 30px;
                     /*Separação dos ícones*/
-                    margin-top: 60px;
+                    margin-top: 45px;
                     /*Dando um espaçamento no topo*/
                     color: #fff;
                      /*Cor do texto*/
@@ -415,10 +415,11 @@
 
                 .content ul {
                     /*Chamando a ul (lista) para estilização*/
-                    margin-top: 60px;
+                    margin-top: 50px;
                     /*Dando um espaçamento no topo*/
                     text-align: center;
                      /*Alinhando texto ao centro*/
+                     font-size: 1.4rem;
                 }
 
                 .content ul li { 
@@ -429,12 +430,13 @@
                     /*Espaçamento em todos os lados*/
                 }
 
+
+                .content span{
+                    font-size: 1.4rem;
+                }
+
                 .email { 
                     /*Chamando a div pai do ícone do email e texto para estilizar*/
-                    display: flex;
-                   /*Tornando flex, e alinhando itens na vertical*/
-                    justify-content: center;
-                   /*Justificando itens da maneira que quiser*/
                     text-align: center;
                       /*Alinhando texto ao centro*/
                     font-size: 0.7rem;
@@ -447,20 +449,31 @@
                    /*Cor do texto*/
                     font-size: 1rem;
                   /*Tamanho do texto*/
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             text-align: center;
+
                 }
+
+
+.content .p-clear{
+    font-size: 1.2rem;
+
+}
+
 
 
                 button {
                     /*Chamando o botão para estilizar*/
-                    width: 120px;
-                    /*Largura do botão*/
-                    height: 45px;
-                    /*Altura do botão*/
+                    width: 150px;
+                    height: 35px;
                     border-radius: 20px;
                     /*Arredondamento do botão*/
                     margin-top: 35px;
                     /*Dando um espaço na parte de baixo do botão*/
-
+padding: 5px; /*Dando um respiro dentro do botão*/
+border: 2px solid black;
                 }
 
 
@@ -499,6 +512,7 @@
                     /*Chamando parágrafo do footer para estilizar*/
                     color: #fff;
                     /*Cor do texto*/
+                    font-size: 1.5rem;
                 }
 
 
